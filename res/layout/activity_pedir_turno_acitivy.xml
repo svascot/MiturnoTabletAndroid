@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    tools:context="com.miturno.miturnotablet.PedirTurnoAcitivy"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtTuTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Tu turno es:"
+            android:textColor="#ffa800"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/txtTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text=""
+            android:textColor="#ffa800"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/txtCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:paddingBottom="20dp"
+            android:text=""
+            android:textColor="#ffa800"
+            android:textSize="50px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPedirTurno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#464646"
+        android:onClick="imprimir"
+        android:padding="20dp"
+        android:text="Imprimir"
+        android:textColor="#ffa800"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+</RelativeLayout>
